@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/styleContact.css
+      include ../static/classinfo.css
+      
+
+block content 
+    div.container
+        h1 Our Dance Classes
+        p Explore the wide range of dance classes we offer at Shree Dance Academy. Whether you're a beginner or an experienced dancer, we have something for everyone.
+
+        //- Service Cards
+        .service-card
+            h2.service-title Ballet
+            p.service-description Our Ballet classes focus on developing grace, flexibility, and strength. Suitable for all ages.
+            a(class="button" href="#") Learn More
+
+        .service-card
+            h2.service-title Hip Hop
+            p.service-description Experience the energy of Hip Hop dance in our classes. Join us to groove to the latest beats.
+            a(class="button" href="#") Learn More
+
+        .service-card
+            h2.service-title Contemporary
+            p.service-description Contemporary dance is all about self-expression. Dive into this artistic style with us.
+            a(class="button" href="#") Learn More
+
+        .service-card
+            h2.service-title Jazz
+            p.service-description Get your feet tapping and body moving in our lively Jazz dance classes.
+            a(class="button" href="#") Learn More
+
+        .service-card
+            h2.service-title Salsa
+            p.service-description Spice up your dance moves with our Salsa classes. Feel the rhythm and have fun.
+            a(class="button" href="#") Learn More
+
+        .service-card
+            h2.service-title Bharatanatyam
+            p.service-description Dive into the rich tradition of Bharatanatyam, an ancient Indian dance form.
+            a(class="button" href="#") Learn More
+
+        //- Add more service cards as needed
+

@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    
+    section#introSection
+        div WELCOME TO SHREE DANCE ACADEMY 
+        div.small  Move To The Beat
+        div.small  To
+    
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best dance academy in india
+
+        div.card
+            h3 Embrace Personal Expression
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best dance academy in india
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p This is the best dance academy in india
+    
+    section#sponsorSection
+        h2 Our sponsors
+        div#sponsors
+            img(src="/static/img/logo1.png", alt="Sponsors img", class="spImage")
+            img(src="/static/img/logo2.png", alt="Sponsors img", class="spImage")
+            img(src="/static/img/logo3.png", alt="Sponsors img", class="spImage")
+            img(src="/static/img/logo4.png", alt="Sponsors img", class="spImage")
+
